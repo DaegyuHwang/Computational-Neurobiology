@@ -1,4 +1,4 @@
-% C = 1 nF = 1000 pF
+% C = 1 nF = 1000 pF/ Tau(ms) R(MΩ) C(nF)
 Rm = 20;
 VL = -65;
 C = 1;
@@ -20,24 +20,33 @@ V = zeros(numtime,1);
 lambda = 1.3;
 T = 1/lambda;
 
-% J ; s(t-tj) = (1/tau)*exp^(-(t-tj)/tau)
-% J = randi(2,numtime,1)-1;
-% J(J==0)=-1;
+
 J=2;
 
-j_n = 0;
 s = zeros(numtime*1000,1);
 
+% Let I_S = input spike
+I_S = zeros(numtime*1000,1);
+
+for k=1: numtime-1
+    if I_S(k) <= totalt
+        I_S(k+1) = I_S(k)+T;
+        if I_S(k+1)>=totalt
+            break
+        end
+    end
+end
 
 
-% Initial conditions
+% Let after_refractory time : A_R
+A_R = 0;
+
 V(1) = VL;
 for t=1 : numtime-1
     timearray(t+1) = timearray(t)+deltat;
-    tj = zeros(numtime*1000, 1);
     if n_spk ~= 0
-        tj(1) = timearray(n_t(n_spk))+t_arp/deltat;
-        if n_t(n_spk)+t_arp/deltat > t
+        A_R = timearray(n_t(n_spk))+t_arp;
+        if timearray(n_t(n_spk))+t_arp > timearray(t)
             V(t+1) = V_reset;      
             continue;
         end
@@ -45,23 +54,17 @@ for t=1 : numtime-1
     end
     
 
-    for k=1: numtime*1000-1
-        if tj(k) <= totalt
-            tj(k+1) = tj(k)+T;
-            if tj(k)>timearray(t)
-                j_n = k-1;
-                break
-            end
-        end
-    end
+    j_start = find(I_S>=A_R,1);
+    j_end = find(I_S>timearray(t),1)-1;
+    j_num = j_end-j_start+1;
  
-    if (t == 1)||(t==tj(1))
+    if j_num == 0
         dV_dt = 1/C*(-(V(t)-VL)/Rm);
     else
-        for i=1 : j_n
-            s(i)= (1/tau)*exp(-(timearray(t)-tj(i))/tau);
+        for i=1 : j_num
+            s(i)= (1/tau)*exp(-(timearray(t)-I_S(i+j_start-1))/tau);
         end
-        dV_dt = 1/C*(-(V(t)-VL)/Rm+J*sum(s(1:j_n)));
+        dV_dt = 1/C*(-(V(t)-VL)/Rm+J*sum(s(1:j_num)));
     end
     V(t+1) = V(t) + dV_dt*deltat;
     if V(t+1) >= V_spk
@@ -78,4 +81,3 @@ xlabel('time (ms)'); ylabel('membrane potential (mV)')
 ylim([-70,0])
 
 
-% after one spike does VL change to V_reset in the differential equations?
