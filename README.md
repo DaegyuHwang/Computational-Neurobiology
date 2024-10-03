@@ -12,5 +12,11 @@ By changing values of 'delta_input'(two options for post-synaptic current) and '
 
 [M4_L3 plot.pdf](https://github.com/user-attachments/files/17237672/M4_L3.plot.pdf)
 
+![M4_L4 plot](https://github.com/user-attachments/assets/19f542d4-9455-4043-9f13-dfa889625f68)
+
+![M4_L6 plot](https://github.com/user-attachments/assets/d2a102db-a8c2-4930-a902-c8164bfdfd12)
+
+![M4_L7 plot](https://github.com/user-attachments/assets/54a80156-630b-40f0-89c9-38e2c3afade7)
+
 [fig 6.6 & fig 6.7 plot.pdf](https://github.com/user-attachments/files/17237673/fig.6.6.fig.6.7.plot.pdf)
 
