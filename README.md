@@ -11,3 +11,7 @@ This matlab code shows the simulation of LIF neuron driven by a spike train
 By changing values of 'delta_input'(two options for post-synaptic current) and 'lambda'(represting the input firing rate), we can get different types of results like below
 
 [Untitled document (16).pdf](https://github.com/user-attachments/files/16629143/Untitled.document.16.pdf)
+
+![image](https://github.com/user-attachments/assets/9c3ddcf9-bac1-4757-a9eb-0f7da02e0eb7)
+
+
