@@ -1,7 +1,7 @@
 # Coputational neurobiology
 
 ## assign 
-'assign' files are the matlab codes that I have used to prove the simularity between the functions and show the shape of it.
+'assign' files are the matlab codes that I have used to show the dynamics of spike trains and some parameters to confirm their patterns.
 
 ## fig 6.6 & fig 6.7 
 This Figs 6.6 and 6.7 are from the Computational Neuroscience Lecture Notes for AMS 332 by professor G.LaCamera
