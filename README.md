@@ -2,7 +2,7 @@
 I have done all of these works under professor G.LaCamera while studying Computational Neuroscience.
 
 ## assign 
-'assign' files are the matlab codes that I have used to show the dynamics of spike trains and some parameters to confirm their patterns.
+'assign' files are the matlab codes that I have used to show the dynamics of spike trains and some parameters to confirm and get insights form their patterns.
 
 ## fig 6.6 & fig 6.7 
 This matlab code shows the simulation of LIF neuron driven by a spike train
