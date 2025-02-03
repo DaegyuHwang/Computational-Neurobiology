@@ -18,6 +18,7 @@ Fig 6.6&6.7: simulation of LIF neuron model driven by muliple spike trains
 
 ### #M4_L3: The transition rates of gating variables in Hodgkin-Huxley model
 ![image](https://github.com/user-attachments/assets/8888dff6-9329-4376-8dda-a4fc1a533a49)
+![image](https://github.com/user-attachments/assets/46fa72fa-046b-49ef-994a-c426b6325ddb)
 
 ### #M4_L4: Saddle-node on an invariant circle bifurcation (SNIC bifurcation)
 
