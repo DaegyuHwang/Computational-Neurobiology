@@ -22,7 +22,6 @@ Simultaion of the voltage-sensitive transition rates α, β (‘gating functions
 
 ### #M4_L4: Saddle-node on an invariant circle bifurcation (SNIC bifurcation)
 Simulations of SNIC model based on polar coordinates below. I aimed to show that ‘repetitive firing’ occurs above when w = 1.
-![image](https://github.com/user-attachments/assets/0bf2280c-4762-4066-a655-c50b429181ba)
 ![image](https://github.com/user-attachments/assets/de2dc9ad-9987-42b2-8cca-bf18c4033050)
 
 ### #M4_L6: Leaky integrate and Fire neuron model (LIF)
