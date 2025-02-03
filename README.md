@@ -25,7 +25,9 @@ Simulations of SNIC model based on polar coordinates below. I aimed to show that
 ![image](https://github.com/user-attachments/assets/de2dc9ad-9987-42b2-8cca-bf18c4033050)
 
 ### #M4_L6: Leaky integrate and Fire neuron model (LIF)
+Simulation of LIF neuron driven by a spike train based on the computational model Eq.6.40 below.
 ![image](https://github.com/user-attachments/assets/d32053f1-018b-4d11-8bc4-180e42840fea)
+![image](https://github.com/user-attachments/assets/1cb9a83f-63f8-4c42-b773-f476dbd9555f)
 
 ### #M4_L7: Comparing 'error function' of LIF model with mathematical model with tanh(x) 
 ![image](https://github.com/user-attachments/assets/47699fc0-c627-42d5-8ed6-1f4f7e9f2519)
