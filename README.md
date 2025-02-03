@@ -5,9 +5,13 @@ All Matlab codes were developed based on theoretical mathematical equations, and
 
 ## models
 M4_L3: The transition rates of gating variables in Hodgkin-Huxley model
+
 M4_L4: Saddle-node on an invariant circle bifurcation (SNIC bifurcation)
+
 M4_L6: Leaky integrate and Fire neuron model (LIF)
+
 M4_L7: Comparing 'error function' of LIF model with mathematical model with tanh(x) 
+
 Fig 6.6&6.7: simulation of LIF neuron model driven by muliple spike trains
 
 
