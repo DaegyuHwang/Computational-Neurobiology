@@ -1,5 +1,5 @@
 ## Coputational neurobiology
-I had made all of these codes under professor G.LaCamera while studying Computational Neurosbiology in his laboratory.
+I have made all of these codes under professor G.LaCamera while studying Computational Neurosbiology.
 
 All Matlab codes were developed based on theoretical mathematical equations, and the generated PDF files were used to verify that they match the theory well, and the dynamics of spike trains and some parameters were investigated to gain insight into the patterns.
 
@@ -29,19 +29,18 @@ Simulation of LIF neuron driven by a spike train based on the computational mode
 ![image](https://github.com/user-attachments/assets/1cb9a83f-63f8-4c42-b773-f476dbd9555f)
 
 ### #M4_L7: Comparing 'error function' of LIF model with mathematical model with tanh(x) 
-
-
-It is easy to prove below question.
+It is trivial to prove below equation mathematically. We used the definition of the hyperbolic tangent, tanh(x) = (e^x - e^(-x))/(e^x + e^(-x)).
 ![image](https://github.com/user-attachments/assets/aaf14cbe-c46f-4216-954f-7fc74ac0d4a5)
-Now we would like to show prove the 
-
-![image](https://github.com/user-attachments/assets/47699fc0-c627-42d5-8ed6-1f4f7e9f2519)
-![image](https://github.com/user-attachments/assets/55498519-0086-446a-9eff-3dd85b517c0a)
+Now we would like to confirm the theoretical content of the approximation by plotting both sides of the equation on xy-plane. 
 
 ### #Fig 6.6&6.7: simulation of LIF neuron model driven by muliple spike trains
-This Matlab code represents LIF neurons driven by multiple spike trains with different frequencies. I replaced the delta function with an exponential function and presented the original LIF model and the modified LIF model in the result PDF files (because it takes time to respond to input, even if it is for a short time).
+This Matlab code represents membrane potential of the LIF neurons driven by multiple spike trains with different fring rate(λ). 
 
-By changing values of 'delta_input'(two options for post-synaptic current) and 'lambda'(represting the input firing rate), we can get different types of results.
+Although the computed average of the input firing rate is a single value, it is more realistic to think of the interval between interspikes as random. we confirmed that the peak of the membrance potential could differ significantly between the regular and random interspike-interval models, even at the same firing rate.
+
+I also replaced the delta function with an exponential function and presented the original LIF model and the modified LIF model in the result PDF files. (Because it is realistic to think that it will take some time to respond to input, even if it is only for a short time).
+
+By changing values of 'delta_input'(two options for post-synaptic current) and 'lambda'(represting the input firing rate) in the code, we could get different types of results.
 
 
 
