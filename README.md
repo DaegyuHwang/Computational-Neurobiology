@@ -17,12 +17,13 @@ Fig 6.6&6.7: simulation of LIF neuron model driven by muliple spike trains
 
 
 ### #M4_L3: The transition rates of gating variables in Hodgkin-Huxley model
-Simultaion of the voltage-sensitive transition rates α, β (‘gating functions’) based on Eq.3.5-3.6
+Simultaion of the voltage-sensitive transition rates α, β (‘gating functions’) based on Eq.3.5-3.6 below.
 ![image](https://github.com/user-attachments/assets/46fa72fa-046b-49ef-994a-c426b6325ddb)
 
 ### #M4_L4: Saddle-node on an invariant circle bifurcation (SNIC bifurcation)
-
+Simulations of SNIC model based on polar coordinates below. I aimed to show that ‘repetitive firing’ occurs above when w = 1.
 ![image](https://github.com/user-attachments/assets/0bf2280c-4762-4066-a655-c50b429181ba)
+![image](https://github.com/user-attachments/assets/de2dc9ad-9987-42b2-8cca-bf18c4033050)
 
 ### #M4_L6: Leaky integrate and Fire neuron model (LIF)
 ![image](https://github.com/user-attachments/assets/d32053f1-018b-4d11-8bc4-180e42840fea)
