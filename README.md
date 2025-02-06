@@ -1,4 +1,4 @@
-## Coputational neurobiology
+## Computational neurobiology
 I have made all of these codes under professor G.LaCamera while studying Computational Neurosbiology.
 
 All Matlab codes were developed based on theoretical mathematical equations, and the generated PDF files were used to verify that they match the theory well, and the dynamics of spike trains and some parameters were investigated to gain insight into the patterns.
